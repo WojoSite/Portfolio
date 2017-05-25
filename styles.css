@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  margin-bottom: 10px;
+}
+
+/* ===== HEADER AREA ===== */
+#header {
+  position: fixed;
+  height: 20px;
+  width: 100%;
+  padding: 20px;
+  background: #1a75ff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#home-button {
+  position: relative;
+  line-height: 20px;
+  font-size: 24px;
+  color: white;
+  font-weight: lighter;
+  text-shadow: 0.5px 0.5px #000000;
+  float: left;
+}
+
+#home-button > span {
+  margin: 0;
+}
+
+#navigation {
+  position: relative;
+  right: 40px;
+  float: right; }
+
+#navigation > a {
+  padding: 0 20px;
+  text-decoration: none;
+  color: white;
+  border-right: 2px solid white;
+  text-shadow: 0.5px 0.5px #000000; }
+
+#navigation > a:hover {
+  transition: 0.20s ease;
+  color: #000066;
+  border-right: 2px solid #000066;
+  text-shadow: none; }
+
+/* ===== HERO AREA ===== */
+#hero-area {
+  margin: 0 0   10px 0;
+  height: 500px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #f2f2f2; /* Placeholder */
+}
+
+#hero-area > h1 {
+  font-size: 55px;
+}
+
+#panel-container {
+  position: relative;
+  margin: 0 10px;
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+}
+
+/* ===== PANEL AREA ===== */
+.panel {
+  position: relative;
+  height: 335px;
+  width: 335px;
+  padding: 0;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #f2f2f2; /* Placeholder */
+}
+
+/* ===== SOCIAL AREA ===== */
+#social-icons {
+  height: 80px;
+  width: 300px;
+  margin: 10px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #f2f2f2; /* Placeholder */
+}
