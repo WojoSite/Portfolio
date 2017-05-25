@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  padding-bottom: 10px;
 }
 
 /* ===== HEADER AREA ===== */
@@ -10,7 +9,7 @@ body {
   height: 20px;
   width: 100%;
   padding: 20px;
-  background: #1a75ff;
+  background-color: #1a75ff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -43,8 +42,8 @@ body {
 
 #navigation > a:hover {
   transition: 0.20s ease;
-  color: #000066;
-  border-right: 2px solid #000066;
+  color: #0000cc;
+  border-right: 2px solid #0000cc;
   text-shadow: none; }
 
 /* ===== HERO AREA ===== */
@@ -96,4 +95,24 @@ body {
   margin: auto;
   border: 1px solid #bfbfbf;
   border-radius: 2px;
+}
+
+/* ===== FOOTER AREA ===== */
+#footer{
+  position: relative;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #0000cc;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#copyright{
+  margin: 0;
+  line-height: 20px;
+  color: white;
+  text-align: center;
+  font-weight: lighter;
 }
