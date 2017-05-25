@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 /* ===== HEADER AREA ===== */
@@ -59,6 +59,7 @@ body {
   font-size: 55px;
 }
 
+/* ===== PANEL AREA ===== */
 #panel-container {
   position: relative;
   margin: 0 10px;
@@ -67,11 +68,10 @@ body {
   height: auto;
 }
 
-/* ===== PANEL AREA ===== */
 .panel {
   position: relative;
-  height: 335px;
-  width: 335px;
+  height: 334px;
+  width: 334px;
   padding: 0;
   margin: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -79,10 +79,21 @@ body {
 }
 
 /* ===== SOCIAL AREA ===== */
-#social-icons {
-  height: 80px;
-  width: 300px;
+#social-container {
+  display: flex;
+  height: 125px;
+  width: 350px;
   margin: 10px auto;
+  padding: 0 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   background-color: #f2f2f2; /* Placeholder */
+}
+
+.icon-container{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: auto;
+  border: 1px solid #bfbfbf;
+  border-radius: 2px;
 }
