@@ -70,8 +70,8 @@ body {
 
 .panel {
   position: relative;
-  height: 334px;
-  width: 334px;
+  height: 330px;
+  width: 330px;
   padding: 0;
   margin: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
