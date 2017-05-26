@@ -37,8 +37,8 @@ html > body {
 
 #navigation {
   position: relative;
-  right: 40px;
   float: right;
+  right: 40px;
 }
 
 #navigation > a {
@@ -151,6 +151,12 @@ html > body {
     font-size: 28px;
   }
 
+  #navigation {
+    position: relative;
+    float: right;
+    right: 0;
+  }
+
   #navigation > a{
     padding: 0 8px;
     line-height: 60px;
@@ -162,9 +168,24 @@ html > body {
   }
 }
 
-/* ==== MEDIA QUERY: MOBILE ===== */
 
-@media screen and (max-width: 640px){
+/* ===== MEDIA QUERY: 640px ===== */
+@media screen and (max-width: 650px){
+
+  #home-button > span{
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+  #navigation > a{
+    font-size: 12px;
+    padding: 0 4px;
+  }
+
+
+/* ==== MEDIA QUERY: 440px ===== */
+
+@media screen and (max-width: 440px){
 
   #header{
     height: 60px;
@@ -177,12 +198,6 @@ html > body {
 
   #home-button{
     float: none;
-  }
-
-  #home-button > span{
-    font-size: 24px;
-    line-height: 20px;
-    text-decoration: none;
   }
 
   #navigation{
