@@ -13,6 +13,7 @@ html > body {
   background-color: #1a75ff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  transition: height 500ms;
 }
 
 #home-button {
@@ -29,23 +30,30 @@ html > body {
   margin: 0;
 }
 
+#hover-nav{
+  display: none;
+}
+
 #navigation {
   position: relative;
   right: 40px;
-  float: right; }
+  float: right;
+}
 
 #navigation > a {
   padding: 0 20px;
   text-decoration: none;
   color: white;
   border-right: 2px solid white;
-  text-shadow: 0.5px 0.5px #000000; }
+  text-shadow: 0.5px 0.5px #000000;
+}
 
 #navigation > a:hover {
   transition: 0.20s ease;
   color: #0000cc;
   border-right: 2px solid #0000cc;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
 /* ===== HERO AREA ===== */
 #hero-area {
@@ -65,17 +73,17 @@ html > body {
   margin: 0 10px;
   display: flex;
   flex-flow: row wrap;
-  height: auto;
+  justify-content: center;
 }
 
 .panel {
   position: relative;
-  height: 330px;
-  width: 330px;
+  height: 23vw;
+  width: 23vw;
   padding: 0;
   margin: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  background-color: #f2f2f2; /* Placeholder */
+  background-color: #f2f2f2;
 }
 
 /* ===== SOCIAL AREA ===== */
@@ -116,4 +124,53 @@ html > body {
   color: white;
   text-align: center;
   font-weight: lighter;
+}
+
+@media screen and (max-width: 1250px){
+
+  .panel {
+    height: 45vw;
+    width: 45vw;
+  }
+
+}
+
+@media screen and (max-width: 750px){
+
+  #header {
+    height: 80px;
+  }
+
+  #home-button > span{
+    line-height: 80px;
+    font-size: 35px;
+  }
+
+  .panel {
+    height: 70vw;
+    width: 70vw;
+  }
+
+  #navigation{
+    display: none;
+  }
+
+  #hover-nav{
+    display: block;
+    position: fixed;
+    margin-top: 70px;
+    right: 20px;
+    font-size: 30px;
+    text-align: right;
+    float: right;
+    background-color: #1a75ff;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+
+  #hover-nav > a{
+    display: block;
+
+  }
+
 }
