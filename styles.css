@@ -183,12 +183,12 @@ html > body {
   }
 
 
-/* ==== MEDIA QUERY: 440px ===== */
+/* ==== MEDIA QUERY: 540px ===== */
 
-@media screen and (max-width: 440px){
+@media screen and (max-width: 540px){
 
   #header{
-    height: 60px;
+    height: 100px;
     box-shadow: none;
   }
 
@@ -210,8 +210,8 @@ html > body {
     box-sizing: border-box;
     height: 60px;
     width: 100%;
-    padding: 20px;
-    top: 60px;
+    padding: 20px 40px;
+    top: 100px;
     float: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     background-color: #005ce6;
