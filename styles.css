@@ -9,7 +9,7 @@ html > body {
   position: fixed;
   height: 60px;
   width: 100%;
-  padding: 20px;
+  /*padding: 20px;*/
   box-sizing: border-box;
   background-color: #1a75ff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -19,7 +19,10 @@ html > body {
 
 #home-button {
   position: relative;
-  line-height: 20px;
+  height: 60px;
+  width: auto;
+  padding: 0 20px;
+  line-height: 60px;
   font-size: 24px;
   color: white;
   font-weight: lighter;
@@ -27,8 +30,8 @@ html > body {
   float: left;
 }
 
-#home-button > span {
-  margin: 0;
+#home-button:active{
+  background-color: #0000cc;
 }
 
 #mobile-nav{
@@ -38,23 +41,33 @@ html > body {
 #navigation {
   position: relative;
   float: right;
-  right: 40px;
 }
 
-#navigation > a {
+#navigation > a{
+  text-decoration: none;
+}
+
+.nav-item{
+  display: inline-block;
+  height: 60px;
+  width: auto;
   padding: 0 20px;
   text-decoration: none;
   color: white;
-  border-right: 2px solid white;
   text-shadow: 0.5px 0.5px #000000;
   transition: padding 1000ms ease;
+  line-height: 60px;
 }
 
-#navigation > a:hover {
-  transition: 0.20s ease;
+.nav-item:hover{
   color: #0000cc;
-  border-right: 2px solid #0000cc;
+  background-color: #80b3ff;
   text-shadow: none;
+}
+
+.nav-item:active{
+  background-color: #0000cc;
+  color: #e6f0ff;
 }
 
 /* ===== HERO AREA ===== */
@@ -128,7 +141,6 @@ html > body {
   font-weight: lighter;
 }
 
-
 /* ===== MEDIA QUERY: Re-size panels */
 @media screen and (max-width: 1250px){
 
@@ -142,13 +154,7 @@ html > body {
 @media screen and (max-width: 768px){
 
   #header {
-    height: 100px;
-  }
-
-  #home-button > span{
-    transition: 1000ms ease;
-    line-height: 60px;
-    font-size: 28px;
+    height: 60px;
   }
 
   #navigation {
@@ -157,38 +163,34 @@ html > body {
     right: 0;
   }
 
-  #navigation > a{
-    padding: 0 8px;
-    line-height: 60px;
+  .nav-item{
+    padding: 0 10px;
   }
 
   .panel {
-    height: 70vw;
-    width: 70vw;
+    height: 45vw;
+    width: 45vw;
   }
 }
 
-
-/* ===== MEDIA QUERY: 640px ===== */
+/* ===== MEDIA QUERY: 650px ===== */
 @media screen and (max-width: 650px){
-
-  #home-button > span{
-    font-size: 24px;
-    text-decoration: none;
+  .nav-item{
+    padding: 0 5px;
   }
 
-  #navigation > a{
-    font-size: 12px;
-    padding: 0 4px;
+/* ===== MEDIA QUERY: 659px ===== */
+@media screen and (max-width: 599px){
+  .panel {
+    height: 75vw;
+    width: 75vw;
   }
+}
 
-
-/* ==== MEDIA QUERY: 540px ===== */
-
-@media screen and (max-width: 540px){
+/* ==== MEDIA QUERY: 560px ===== */
+@media screen and (max-width: 560px){
 
   #header{
-    height: 100px;
     box-shadow: none;
   }
 
@@ -208,10 +210,9 @@ html > body {
     display: block;
     position: fixed;
     box-sizing: border-box;
-    height: 60px;
+    height: 40px;
     width: 100%;
-    padding: 20px 40px;
-    top: 100px;
+    top: 60px;
     float: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     background-color: #005ce6;
@@ -220,16 +221,37 @@ html > body {
 
   #mobile-nav-container{
     display: flex;
+    padding: 0;
     justify-content: space-between;
   }
 
-  .mobile-nav-item > a{
-    text-decoration: none;
-    padding: 0 5px;
+  .nav-item{
+    height: 40px;
+    padding: 0 20px;
     text-decoration: none;
     color: white;
-    border-right: none;
-    text-shadow: 0.5px 0.5px #000000;
-    transition: padding 1000ms ease;
+    line-height: 40px;
+  }
+
+  .nav-item:hover{
+    background-color: #005ce6;
+    color: white;
+  }
+
+  .nav-item:active{
+    background-color: #0000cc;
+  }
+
+  #social-container {
+    margin: 10px 0 0 0;
+    padding: 0 40px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  #footer{
+    margin: 0;
+    box-shadow: none;
   }
 }
