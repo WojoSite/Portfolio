@@ -1,11 +1,11 @@
-html > body {
+html > body{
   margin: 0;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   width: 100%;
 }
 
 /* ===== HEADER AREA ===== */
-#header {
+#header{
   position: fixed;
   height: 60px;
   width: 100%;
@@ -17,7 +17,7 @@ html > body {
   transition: height 500ms;
 }
 
-#home-button {
+#home-button{
   position: relative;
   height: 60px;
   width: auto;
@@ -38,7 +38,7 @@ html > body {
   display: none;
 }
 
-#navigation {
+#navigation{
   position: relative;
   float: right;
 }
@@ -71,19 +71,19 @@ html > body {
 }
 
 /* ===== HERO AREA ===== */
-#hero-area {
+#hero-area{
   margin: 0 0 10px 0;
   height: 500px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   background-color: #f2f2f2; /* Placeholder */
 }
 
-#hero-area > h1 {
+#hero-area > h1{
   font-size: 55px;
 }
 
 /* ===== PANEL AREA ===== */
-#panel-container {
+#panel-container{
   position: relative;
   margin: 0 10px;
   display: flex;
@@ -91,7 +91,7 @@ html > body {
   justify-content: center;
 }
 
-.panel {
+.panel{
   position: relative;
   height: 23vw;
   width: 23vw;
@@ -102,7 +102,7 @@ html > body {
 }
 
 /* ===== SOCIAL AREA ===== */
-#social-container {
+#social-container{
   display: flex;
   height: 125px;
   width: 350px;
@@ -153,11 +153,11 @@ html > body {
 /* ===== MEDIA QUERY: TABLET ===== */
 @media screen and (max-width: 768px){
 
-  #header {
+  #header{
     height: 60px;
   }
 
-  #navigation {
+  #navigation{
     position: relative;
     float: right;
     right: 0;
@@ -167,7 +167,7 @@ html > body {
     padding: 0 10px;
   }
 
-  .panel {
+  .panel{
     height: 45vw;
     width: 45vw;
   }
@@ -242,7 +242,7 @@ html > body {
     background-color: #0000cc;
   }
 
-  #social-container {
+  #social-container{
     margin: 10px 0 0 0;
     padding: 0 40px;
     width: 100%;
