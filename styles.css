@@ -70,22 +70,42 @@ html > body{
   color: #e6f0ff;
 }
 
-/* ===== HERO AREA ===== */
-#hero-area-container{
+/* ===== PAGE CONTAINER ===== */
+#page-container{
   position: relative;
   top: 60px;
-  height: 500px;
-  box-sizing: border-box;
-  padding: 40px;
+  margin: 0;
+  padding: 0;
 }
 
+/* ===== HERO AREA ===== */
+#hero-area-container{
+  height: 400px;
+  padding: 60px;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+#hero-title{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+}
+
+#hero-image{
+  display: inline-block;
+  height: 275px;
+  width: 275px;
+  background-image: url('images/wojo.jpg');
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
 
 /* ===== PANO IMAGE AREA ===== */
 #pano-image{
   margin: 0 0 10px 0;
   height: 400px;
   width: 100%;
-  /*box-sizing: border-box;*/
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   background-color: #f2f2f2; /* Placeholder */
   background-image: url(images/pch.jpg);
