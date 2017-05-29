@@ -82,7 +82,7 @@ html > body{
 /* ===== HERO AREA ===== */
 #hero-area-container{
   height: auto;
-  padding: 20px;
+  padding: 60px;
   text-align: center;
 }
 
@@ -113,7 +113,6 @@ html > body{
   height: 400px;
   width: 100%;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-  background-color: #f2f2f2; /* Placeholder */
   background-image: url(images/pch.jpg);
   background-size: cover;
   background-position: center;
