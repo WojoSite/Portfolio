@@ -81,7 +81,7 @@ html > body{
 /* ===== HERO AREA ===== */
 #hero-area-container{
   height: auto;
-  padding: 60px;
+  padding: 20px;
   flex-flow: column wrap;
   text-align: center;
 }
@@ -91,10 +91,15 @@ html > body{
   font-size: 22px;
 }
 
+#hero-title > h1{
+  margin: 10px;
+}
+
 #hero-image{
   display: inline-block;
   height: 275px;
   width: 275px;
+  margin: 20px;
   background-image: url('images/wojo.jpg');
   background-size: cover;
   border-radius: 50%;
