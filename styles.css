@@ -71,16 +71,28 @@ html > body{
 }
 
 /* ===== HERO AREA ===== */
-#hero-area{
-  margin: 0 0 10px 0;
+#hero-area-container{
+  position: relative;
+  top: 60px;
   height: 500px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  background-color: #f2f2f2; /* Placeholder */
+  box-sizing: border-box;
+  padding: 40px;
 }
 
-#hero-area > h1{
-  font-size: 55px;
+
+/* ===== PANO IMAGE AREA ===== */
+#pano-image{
+  margin: 0 0 10px 0;
+  height: 400px;
+  width: 100%;
+  /*box-sizing: border-box;*/
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  background-color: #f2f2f2; /* Placeholder */
+  background-image: url(images/pch.jpg);
+  background-size: cover;
+  background-position: center;
 }
+
 
 /* ===== PANEL AREA ===== */
 #panel-container{
