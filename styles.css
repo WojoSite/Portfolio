@@ -259,6 +259,22 @@ html > body{
   }
 }
 
+/* ===== MEDIA QUERY: Re-size pano font */
+@media screen and (max-width: 960px){
+  #pano-text-container{
+    width: 65vw;
+  }
+  #pano-text-container > p{
+    margin: 20px;
+    font-size: 2em;
+  }
+
+  #author{
+    font-style: italic;
+    font-size: 1.5em;
+  }
+}
+
 /* ===== MEDIA QUERY: TABLET ===== */
 @media screen and (max-width: 768px){
 
@@ -286,6 +302,16 @@ html > body{
 @media screen and (max-width: 650px){
   .nav-item{
     padding: 0 5px;
+  }
+
+  #pano-text-container > p{
+    margin: 20px;
+    font-size: 1.5em;
+  }
+
+  #author{
+    font-style: italic;
+    font-size: 1em;
   }
 
 /* ===== MEDIA QUERY: 659px ===== */
@@ -359,6 +385,16 @@ html > body{
     height: 200px;
     width: 200px;
   }
+
+  #pano-text-container > p{
+    margin: 20px;
+    font-size: 1em;
+  }
+
+  /*#author{
+    font-style: italic;
+    font-size: 1em;
+  }*/
 
   #social-container{
     margin: 10px 0 0 0;
