@@ -386,15 +386,14 @@ html > body{
     width: 200px;
   }
 
+  #pano-text-container{
+    margin: 120px 20px;
+  }
+
   #pano-text-container > p{
     margin: 20px;
     font-size: 1em;
   }
-
-  /*#author{
-    font-style: italic;
-    font-size: 1em;
-  }*/
 
   #social-container{
     margin: 10px 0 0 0;
