@@ -377,6 +377,11 @@ html > body{
     background-color: #0000cc;
   }
 
+  #page-container{
+    position: relative;
+    top: 100px;
+  }
+
   #hero-title{
     font-size: 12px;
   }
@@ -392,7 +397,7 @@ html > body{
 
   #pano-text-container > p{
     margin: 20px;
-    font-size: 1em;
+    font-size: 1.25em;
   }
 
   #social-container{
