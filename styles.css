@@ -80,7 +80,7 @@ html > body{
 
 /* ===== HERO AREA ===== */
 #hero-area-container{
-  height: 400px;
+  height: auto;
   padding: 60px;
   flex-flow: column wrap;
   text-align: center;
@@ -181,8 +181,27 @@ html > body{
   height: 60px;
   width: 60px;
   margin: auto;
-  border: 1px solid #bfbfbf;
-  border-radius: 2px;
+}
+
+#github-icon{
+  height: 100%;
+  width: 100%;
+  background-image: url('images/github.png');
+  background-size: cover;
+}
+
+#linkedin-icon{
+  height: 100%;
+  width: 100%;
+  background-image: url('images/linkedin.png');
+  background-size: cover;
+}
+
+#instagram-icon{
+  height: 100%;
+  width: 100%;
+  background-image: url('images/instagram.png');
+  background-size: cover;
 }
 
 /* ===== FOOTER AREA ===== */
@@ -304,6 +323,15 @@ html > body{
 
   .nav-item:active{
     background-color: #0000cc;
+  }
+
+  #hero-title{
+    font-size: 12px;
+  }
+
+  #hero-image{
+    height: 200px;
+    width: 200px;
   }
 
   #social-container{
