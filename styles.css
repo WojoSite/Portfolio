@@ -1,7 +1,7 @@
 /* ***** INDEX.HTML STYLES ***** */
 html > body{
   margin: 0;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: 'Khula', sans-serif;
   width: 100%;
 }
 
@@ -24,11 +24,10 @@ html > body{
   width: auto;
   padding: 0 20px;
   line-height: 60px;
-  font-size: 24px;
+  font-size: 28px;
   color: white;
-  font-weight: lighter;
-  text-shadow: 0.5px 0.5px #000000;
   float: left;
+  font-family: 'Permanent Marker', cursive;
 }
 
 #home-button:active{
@@ -55,9 +54,9 @@ html > body{
   padding: 0 20px;
   text-decoration: none;
   color: white;
-  text-shadow: 0.5px 0.5px #000000;
   transition: padding 1000ms ease;
   line-height: 60px;
+  font-weight: bold;
 }
 
 #about-active{
@@ -91,7 +90,6 @@ html > body{
 }
 
 #hero-title{
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
 }
 
@@ -107,7 +105,7 @@ html > body{
   background-image: url('images/wojo.jpg');
   background-size: cover;
   border-radius: 50%;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* ===== PANO IMAGE AREA ===== */
@@ -151,6 +149,7 @@ html > body{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .panel{
@@ -278,7 +277,8 @@ html > body{
 #about-title > h1{
   position: relative;
   text-align: center;
-  margin-bottom: 10px;
+  font-size: 40px;
+  font-family: 'Permanent Marker', cursive;
 }
 
 #about-text-container{
