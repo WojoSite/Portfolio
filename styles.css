@@ -60,6 +60,10 @@ html > body{
   line-height: 60px;
 }
 
+#about-active{
+  background-color: #80b3ff;
+}
+
 .nav-item:hover{
   color: #0000cc;
   background-color: #80b3ff;
@@ -434,6 +438,10 @@ html > body{
   }
 
   .nav-item:active{
+    background-color: #0000cc;
+  }
+
+  #about-active-mobile{
     background-color: #0000cc;
   }
 
