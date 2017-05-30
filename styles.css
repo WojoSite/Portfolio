@@ -255,6 +255,53 @@ html > body{
   font-weight: lighter;
 }
 
+/* ***** ABOUT PAGE STYLES ***** */
+
+#about-container{
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 60px;
+  justify-content: center;
+}
+
+#about-title{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#about-title > h1{
+  position: relative;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+#about-text-container > h2{
+  margin-bottom: 5px;
+}
+
+#about-text-container > p{
+  margin-top: 5px;
+}
+
+#about-text-container{
+  display: inline-block;
+  height: auto;
+  width: 70vw;
+  margin: 20px 80px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  line-height: 1.5em;
+}
+
+#about-text-container > h2{
+  text-decoration: underline;
+}
+
+
 /* ===== MEDIA QUERY: Re-size panels */
 @media screen and (max-width: 1250px){
 
@@ -414,7 +461,7 @@ html > body{
   }
 
   #social-container{
-    margin: 10px 0 0 0;
+    margin: 100px 0 0 0;
     padding: 0 40px;
     width: 100%;
     box-sizing: border-box;
@@ -424,5 +471,15 @@ html > body{
   #footer{
     margin: 0;
     box-shadow: none;
+  }
+
+  #about-text-container{
+    margin: 20px;
+    padding: 20px;
+    width: 90vw;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    line-height: 1.5em;
+    font-size: 14px;
   }
 }
