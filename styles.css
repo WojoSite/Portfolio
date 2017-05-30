@@ -274,7 +274,7 @@ html > body{
 #about-title > h1{
   position: relative;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 #about-text-container > h2{
@@ -282,7 +282,7 @@ html > body{
 }
 
 #about-text-container > p{
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 #about-text-container{
