@@ -12,7 +12,8 @@ html > body{
   width: 100%;
   /*padding: 20px;*/
   box-sizing: border-box;
-  background-color: #1a75ff;
+  /*background-color: #1a75ff;*/
+  background-color: #f2f2f2;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 2;
   transition: height 500ms;
@@ -25,14 +26,16 @@ html > body{
   padding: 0 20px;
   line-height: 60px;
   font-size: 28px;
-  color: white;
+  color: black;
   float: left;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  /*border-right: 1px solid #d9d9d9;*/
 }
 
-#home-button:active{
-  background-color: #0000cc;
+#home-button:hover{
+  color: #00ff00;
 }
+
 
 #mobile-nav{
   display: none;
@@ -53,25 +56,25 @@ html > body{
   width: auto;
   padding: 0 20px;
   text-decoration: none;
-  color: white;
+  color: black;
   transition: padding 1000ms ease;
   line-height: 60px;
+  font-size: 20px;
   font-weight: bold;
+  font-family: 'Permanent Marker', cursive;
 }
 
 #about-active{
-  background-color: #80b3ff;
+  background-color: white;
 }
 
 .nav-item:hover{
-  color: #0000cc;
-  background-color: #80b3ff;
+  color: #00ff00;
   text-shadow: none;
 }
 
 .nav-item:active{
-  background-color: #0000cc;
-  color: #e6f0ff;
+  color: white;
 }
 
 /* ===== PAGE CONTAINER ===== */
@@ -80,6 +83,21 @@ html > body{
   top: 60px;
   margin: 0;
   padding: 0;
+}
+
+#page-title-container{
+  box-sizing: border-box;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+#page-title{
+  line-height: 100px;
+  font-size: 40px;
+  color: #00e600;
+  font-family: 'Permanent Marker', cursive;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* ===== HERO AREA ===== */
@@ -134,6 +152,10 @@ html > body{
 #pano-text-container > p{
   margin: 20px;
   font-size: 2.5em;
+}
+
+#quote{
+  font-weight: bold;
 }
 
 #author{
@@ -246,7 +268,7 @@ html > body{
   width: 100%;
   margin-top: 20px;
   padding: 20px 0;
-  background-color: #0000cc;
+  background-color: #595959;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -270,14 +292,11 @@ html > body{
   justify-content: center;
 }
 
-#about-title{
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 #about-title > h1{
   position: relative;
   text-align: center;
   font-size: 40px;
+  color: #00e600;
   font-family: 'Permanent Marker', cursive;
 }
 
@@ -386,8 +405,16 @@ html > body{
   }
 }
 
+/*make nav-items smaller*/
+@media screen and (max-width: 860px){
+  .nav-item{
+    padding: 0 20px;
+    font-size: 16px;
+  }
+}
+
 /* ===== MEDIA QUERY: TABLET ===== */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 800px){
 
   #header{
     height: 60px;
@@ -401,6 +428,7 @@ html > body{
 
   .nav-item{
     padding: 0 10px;
+    font-size: 16px;
   }
 
   .panel{
@@ -417,8 +445,12 @@ html > body{
   }
 }
 
-/* ===== MEDIA QUERY: 650px ===== */
-@media screen and (max-width: 650px){
+/* ===== MEDIA QUERY: 700px ===== */
+@media screen and (max-width: 700px){
+  #home-button{
+    transition: font-size 500ms ease;
+    font-size: 22px;
+  }
   .nav-item{
     padding: 0 5px;
   }
@@ -441,8 +473,8 @@ html > body{
   }
 }
 
-/* ==== MEDIA QUERY: 560px ===== */
-@media screen and (max-width: 560px){
+/* ==== MEDIA QUERY: 600px ===== */
+@media screen and (max-width: 600px){
 
   #header{
     box-shadow: none;
@@ -454,6 +486,14 @@ html > body{
 
   #home-button{
     float: none;
+  }
+
+  #home-button:hover{
+    color: black;
+  }
+
+  $home-button:active{
+    background-color: white;
   }
 
   #navigation{
@@ -469,8 +509,9 @@ html > body{
     top: 60px;
     float: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    background-color: #005ce6;
+    background-color: #b3b3b3;
     z-index: 1;
+    font-family: 'Permanent Marker', cursive;
   }
 
   #mobile-nav-container{
@@ -481,28 +522,38 @@ html > body{
 
   .nav-item{
     height: 40px;
-    padding: 0 20px;
+    padding: 0 10px;
     text-decoration: none;
-    color: white;
+    color: black;
     line-height: 40px;
   }
 
-  .nav-item:hover{
+  /*.nav-item:hover{
     background-color: #005ce6;
     color: white;
-  }
+  }*/
 
   .nav-item:active{
-    background-color: #0000cc;
+    background-color: white;
+    color: #00ff00;
   }
 
   #about-active-mobile{
-    background-color: #0000cc;
+    background-color: white;
   }
 
   #page-container{
     position: relative;
     top: 100px;
+  }
+
+  #page-title-container{
+    height: 40px;
+  }
+
+  #page-title{
+    line-height: 40px;
+    font-size: 30px;
   }
 
   #hero-title{
