@@ -478,6 +478,8 @@ html > body{
 
   #header{
     box-shadow: none;
+    height: 50px;
+    text-align: center;
   }
 
   #header > a{
@@ -486,6 +488,7 @@ html > body{
 
   #home-button{
     float: none;
+    line-height: 50px;
   }
 
   #home-button:hover{
@@ -506,7 +509,7 @@ html > body{
     box-sizing: border-box;
     height: 40px;
     width: 100%;
-    top: 60px;
+    top: 50px;
     float: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     background-color: #b3b3b3;
