@@ -478,7 +478,7 @@ html > body{
 
   #header{
     box-shadow: none;
-    height: 50px;
+    height: 40px;
     text-align: center;
   }
 
@@ -488,7 +488,8 @@ html > body{
 
   #home-button{
     float: none;
-    line-height: 50px;
+    height: 40px;
+    line-height: 40px;
   }
 
   #home-button:hover{
@@ -507,9 +508,9 @@ html > body{
     display: block;
     position: fixed;
     box-sizing: border-box;
-    height: 40px;
+    height: 30px;
     width: 100%;
-    top: 50px;
+    top: 40px;
     float: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     background-color: #b3b3b3;
@@ -524,11 +525,11 @@ html > body{
   }
 
   .nav-item{
-    height: 40px;
+    height: 30px;
     padding: 0 10px;
     text-decoration: none;
     color: black;
-    line-height: 40px;
+    line-height: 30px;
   }
 
   /*.nav-item:hover{
@@ -547,7 +548,7 @@ html > body{
 
   #page-container{
     position: relative;
-    top: 100px;
+    top: 70px;
   }
 
   #page-title-container{
