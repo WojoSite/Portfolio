@@ -1,0 +1,13 @@
+@import 'splash';
+@import 'header';
+@import 'projects';
+@import 'contact';
+@import 'about';
+
+body{
+  margin: 0;
+  .content-container{
+    height: 400px;
+    width: 100%;
+  }
+}

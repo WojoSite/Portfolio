@@ -1,112 +1,50 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>mattwojtkun.com</title>
-    <link rel="icon" href="images/taco.png">
-    <link href="https://fonts.googleapis.com/css?family=Khula|Orbitron|Permanent+Marker|Montserrat+Subrayada" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="public/styles.css">
   </head>
+
   <body>
 
-    <!-- HEADER -->
     <div id="header">
-      <a href="index.html">
-        <div id="home-button">
-          <span>mattwojtkun.com</span>
-        </div>
-      </a>
-      <div id="navigation">
-        <a href="about.html">
-          <div class="nav-item">About</div>
+      <div id="brand">
+        <p id="brand-letter">MW</p>
+      </div>
+      <div id="nav-items">
+        <a href="#">
+          <div class="nav-item" id="projects-nav">Projects</div>
         </a>
-        <a href="projects.html">
-          <div class="nav-item">Projects</div>
+        <a href="#">
+          <div class="nav-item" id="about-nav">About</div>
         </a>
-        <a href="gallery.html">
-          <div class="nav-item">Gallery</div>
-        </a>
-        <a href="contact.html">
-          <div class="nav-item">Contact</div>
+        <a href="#">
+          <div class="nav-item" id="contact-nav">Contact</div>
         </a>
       </div>
     </div>
 
-    <!-- NAV (at 640px media break) -->
-    <div id="mobile-nav">
-      <div id="mobile-nav-container">
-        <a href="about.html">
-          <div class="nav-item">About</div>
-        </a>
-        <a href="projects.html">
-          <div class="nav-item">Projects</div>
-        </a>
-        <a href="gallery.html">
-          <div class="nav-item">Gallery</div>
-        </a>
-        <a href="contact.html">
-          <div class="nav-item">Contact</div>
-        </a>
+    <div class="container" id="splash">
+      <div id="splash-item-container">
+        <div class="splash-letter-item" id="first-letter">
+          <p class="letter">M</p></div>
+          <div class="rest" id="rest-first">att</div>
+        <div class="splash-letter-item" id="last-letter">
+          <p class="letter">W</p></div>
+          <div class="rest" id="rest-last">ojtkun</div>
+          <div id="tagline">Web Developer</div>
       </div>
     </div>
 
-    <!-- PAGE CONTAINER -->
-    <div id="page-container">
+    <div class="content-container" id="projects"></div>
+    <div class="content-container" id="about"></div>
+    <div class="content-container" id="contact"></div>
 
-      <!-- HERO AREA -->
-      <div id="hero-area-container">
-        <!-- ADD HERO TITLE IF DESRED: <div id="hero-title">
-          <h1>mattwojtkun.com</h1>
-        </div> -->
-        <div id="hero-image"></div>
-      </div>
 
-      <!-- PANO IMAGE AREA -->
-      <div id="pano-image">
-        <div id="pano-text-container">
-          <p id="quote">"Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better."</p>
-          <p id="author">- Samuel Beckett</p>
-        </div>
-      </div>
-
-      <!-- PANEL AREA -->
-      <div id="panel-container">
-        <a href="about.html" class="panel" id="panel1">
-          <div class="panel-text">About</div>
-        </a>
-        <a href="http://mattwojtkun.com/projects/metroApp/metroapp.html" target="_blank" class="panel" id="panel2">
-          <div class="panel-text">Feature Project</div>
-        </a>
-        <a href="gallery.html" class="panel" id="panel3">
-          <div class="panel-text">Gallery</div>
-        </a>
-        <a href="https://github.com/WojoSite" target="_blank" class="panel" id="panel4">
-          <div class="panel-text">GitHub</div>
-        </a>
-      </div>
-
-      <!-- SOCIAL AREA -->
-      <div id="social-row">
-        <div id="social-container">
-          <a href="https://github.com/WojoSite" target="_blank" class="icon-container">
-              <div id="github-icon"></div>
-          </a>
-          <a href="https://www.linkedin.com/in/matthewwojtkun/" target="_blank" class="icon-container">
-            <div id="linkedin-icon"></div>
-          </a>
-          <a href="https://www.instagram.com/mattwojtkun/" target="_blank" class="icon-container">
-            <div id="instagram-icon"></div>
-          </a>
-        </div>
-      </div>
-
-      <!-- FOOTER -->
-      <div id="footer">
-        <h3 id="copyright">&#9400; mattwojtkun.com 2017</h3>
-      </div>
-    </div>
-
-    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,130 @@
+#splash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Righteous", cursive; }
+  #splash #splash-item-container {
+    position: relative;
+    height: 300px;
+    width: 300px; }
+    #splash #splash-item-container .splash-letter-item {
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      border: 4px solid black;
+      border-radius: 24px;
+      background-color: white;
+      color: black;
+      font-size: 100px;
+      text-align: center; }
+    #splash #splash-item-container #first-letter {
+      z-index: 1; }
+    #splash #splash-item-container #rest-first {
+      position: absolute;
+      left: 112px;
+      font-size: 90px; }
+@keyframes splashletters {
+  100% {
+    top: 120px;
+    transform: rotate(360deg); } }
+@keyframes splashnames {
+  100% {
+    opacity: 1; } }
+    #splash #splash-item-container #last-letter {
+      top: 0;
+      transform: rotate(180deg);
+      animation-name: splashletters;
+      animation-duration: 1s;
+      animation-delay: 1s;
+      animation-fill-mode: forwards; }
+    #splash #splash-item-container #rest-last {
+      position: absolute;
+      top: 118px;
+      left: 112px;
+      font-size: 90px; }
+    #splash #splash-item-container .rest {
+      animation-name: splashnames;
+      animation-duration: 1s;
+      animation-delay: 2s;
+      animation-fill-mode: forwards;
+      opacity: 0; }
+    #splash #splash-item-container .letter {
+      margin: 0;
+      line-height: 100px; }
+@keyframes tagline {
+  100% {
+    opacity: 1; } }
+    #splash #splash-item-container #tagline {
+      position: absolute;
+      top: 250px;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-family: "Roboto", sans-serif;
+      opacity: 0;
+      animation-name: tagline;
+      animation-duration: 2s;
+      animation-delay: 2s;
+      animation-fill-mode: forwards; }
+
+#header {
+  display: none;
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  height: 90px;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid gray; }
+  #header #brand {
+    position: absolute;
+    height: 50px;
+    width: 84px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white;
+    text-align: center; }
+    #header #brand #brand-letter {
+      margin: 0;
+      color: black;
+      font-size: 40px;
+      line-height: 50px;
+      font-family: "Righteous", cursive; }
+  #header #nav-items {
+    float: right;
+    margin: 15px; }
+    #header #nav-items a {
+      text-decoration: none; }
+      #header #nav-items a .nav-item {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+        color: black;
+        border: 1px solid black;
+        border-radius: 2px;
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase; }
+
+.content-container {
+  height: 400px;
+  width: 100%; }
+
+#projects {
+  position: relative;
+  background-color: blue; }
+
+#contact {
+  position: relative;
+  background-color: gray; }
+
+#about {
+  position: relative;
+  background-color: green; }
+
+body {
+  margin: 0; }
+  body .content-container {
+    height: 400px;
+    width: 100%; }
+
+/*# sourceMappingURL=styles.css.map */

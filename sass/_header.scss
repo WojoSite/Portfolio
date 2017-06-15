@@ -1,0 +1,48 @@
+$title-font: 'Righteous', cursive;
+$secondary-font: 'Roboto', sans-serif;
+
+#header{
+  display: none;
+  position: fixed;
+  top:0;
+  box-sizing: border-box;
+  height: 90px;
+  width: 100%;
+  // background-color: gray;
+  z-index: 2;
+  border-bottom: 1px solid gray;
+  #brand{
+    position: absolute;
+    height: 50px;
+    width: 84px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white;
+    text-align: center;
+    #brand-letter{
+      margin: 0;
+      color: black;
+      font-size: 40px;
+      line-height: 50px;
+      font-family: $title-font;
+    }
+  }
+  #nav-items{
+    float: right;
+    margin: 15px;
+    a{
+      text-decoration: none;
+      .nav-item{
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+        color: black;
+        border: 1px solid black;
+        border-radius: 2px;
+        font-family: $secondary-font;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
