@@ -12,7 +12,7 @@ $(document).ready(function($) {
 
   $(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > 300) {
+    if (y > 250) {
       $('#header').fadeIn();
     } else {
       $('#header').fadeOut();
