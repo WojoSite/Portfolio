@@ -1,5 +1,9 @@
 $title-font: 'Righteous', cursive;
 $secondary-font: 'Roboto', sans-serif;
+$theme-color: white;
+$hover-bg: #bfbfbf;
+$active-bg: #4d4d4d;
+$break-small: 380px;
 
 #header{
   display: none;
@@ -10,38 +14,72 @@ $secondary-font: 'Roboto', sans-serif;
   width: 100%;
   // background-color: gray;
   z-index: 2;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid $theme-color;
+  @media screen and (max-width: $break-small) {
+    height: 50px;
+  }
   #brand{
     position: absolute;
     height: 50px;
     width: 84px;
     margin: 20px;
-    border: 1px solid black;
+    border: 1px solid $theme-color;
     border-radius: 8px;
-    background-color: white;
+    // background-color: $theme-color;
     text-align: center;
+    cursor: pointer;
+    @media screen and (max-width: $break-small) {
+      height: 30px;
+      width: 50px;
+      margin: 8px;
+    }
     #brand-letter{
       margin: 0;
-      color: black;
+      color: $theme-color;
       font-size: 40px;
       line-height: 50px;
       font-family: $title-font;
+      border-radius: 8px;
+      @media screen and (max-width: $break-small) {
+        font-size: 24px;
+        line-height: 30px;
+      }
+      &:hover{
+        background-color: $hover-bg;
+      }
+      &:active{
+        background-color: $active-bg;
+      }
     }
   }
   #nav-items{
     float: right;
     margin: 15px;
+    @media screen and (max-width: $break-small) {
+      margin: 5px;
+    }
     a{
       text-decoration: none;
       .nav-item{
         display: inline-block;
         margin: 10px;
         padding: 10px;
-        color: black;
-        border: 1px solid black;
+        color: $theme-color;
+        border: 1px solid $theme-color;
         border-radius: 2px;
         font-family: $secondary-font;
         text-transform: uppercase;
+        @media screen and (max-width: $break-small) {
+          margin: 5px;
+          padding: 5px;
+          font-size: 14px;
+        }
+        &:hover{
+          background-color: $hover-bg;
+        }
+        &:active{
+          background-color: $active-bg;
+        }
       }
     }
   }
