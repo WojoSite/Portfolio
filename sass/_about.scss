@@ -1,6 +1,13 @@
 
 
 #about{
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
   position: relative;
-  background-color: green;
+  background-color: gray;
+  #about-container{
+
+    width: 80%;
+  }
 }

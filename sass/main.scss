@@ -7,8 +7,9 @@
 body{
   margin: 0;
   .content-container{
+    position: relative;
     box-sizing: border-box;
-    height: 400px;
+    height: 500px;
     width: 100%;
   }
 }
