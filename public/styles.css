@@ -10,8 +10,8 @@
     width: 350px; }
     @media screen and (max-width: 450px) {
       #splash #splash-item-container {
-        height: 200px;
-        width: 200px; } }
+        height: 250px;
+        width: 250px; } }
     #splash #splash-item-container .splash-letter-item {
       position: absolute;
       height: 100px;
@@ -110,7 +110,7 @@
   width: 100%;
   z-index: 2;
   border-bottom: 1px solid white; }
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 450px) {
     #header {
       height: 50px; } }
   #header #brand {
@@ -122,7 +122,7 @@
     border-radius: 8px;
     text-align: center;
     cursor: pointer; }
-    @media screen and (max-width: 380px) {
+    @media screen and (max-width: 450px) {
       #header #brand {
         height: 30px;
         width: 50px;
@@ -134,14 +134,14 @@
       line-height: 50px;
       font-family: "Righteous", cursive;
       border-radius: 8px; }
-      @media screen and (max-width: 380px) {
+      @media screen and (max-width: 450px) {
         #header #brand #brand-letter {
           font-size: 24px;
           line-height: 30px; } }
   #header #nav-items {
     float: right;
     margin: 15px; }
-    @media screen and (max-width: 380px) {
+    @media screen and (max-width: 450px) {
       #header #nav-items {
         margin: 5px; } }
     #header #nav-items a {
@@ -155,7 +155,7 @@
         border-radius: 2px;
         font-family: "Roboto", sans-serif;
         text-transform: uppercase; }
-        @media screen and (max-width: 380px) {
+        @media screen and (max-width: 450px) {
           #header #nav-items a .nav-item {
             margin: 5px;
             padding: 5px;
@@ -172,15 +172,6 @@
 #contact {
   position: relative;
   background-color: red; }
-
-#about {
-  display: flex;
-  flex-flow: row wrap;
-  box-sizing: border-box;
-  position: relative;
-  background-color: gray; }
-  #about #about-container {
-    width: 80%; }
 
 body {
   margin: 0; }

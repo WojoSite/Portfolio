@@ -3,7 +3,7 @@ $secondary-font: 'Roboto', sans-serif;
 $theme-color: white;
 $hover-bg: #bfbfbf;
 $active-bg: #4d4d4d;
-$break-small: 380px;
+$break-small: 450px;
 
 #header{
   display: none;
@@ -12,7 +12,6 @@ $break-small: 380px;
   box-sizing: border-box;
   height: 90px;
   width: 100%;
-  // background-color: gray;
   z-index: 2;
   border-bottom: 1px solid $theme-color;
   @media screen and (max-width: $break-small) {
