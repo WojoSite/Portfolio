@@ -1,5 +1,33 @@
 
-
+$secondary-font: 'Roboto', sans-serif;
+$content-font: 'Raleway', sans-serif;
+$break-850: 850px;
+$break-680: 680px;
 #about{
-  
+  box-sizing: border-box;
+  padding: 90px 30px;
+  @media screen and (max-width: $break-680) {
+    font-size: 1.5em;
+
+  }
+  #about-image{
+    float: left;
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+  }
+  .about-text{
+    margin: 20px;
+    font-size: 2em;
+    line-height: 2em;
+    font-family: $content-font;
+    color: white;
+    font-weight: 100;
+    @media screen and (max-width: $break-850) {
+      font-size: 1.75em;
+    }
+    @media screen and (max-width: $break-680) {
+      font-size: 1.25em;
+    }
+  }
 }

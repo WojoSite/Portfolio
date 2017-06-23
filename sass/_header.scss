@@ -1,5 +1,6 @@
 $title-font: 'Righteous', cursive;
 $secondary-font: 'Roboto', sans-serif;
+$content-font: 'Raleway', sans-serif;
 $theme-color: white;
 $hover-bg: #bfbfbf;
 $active-bg: #4d4d4d;
@@ -13,7 +14,7 @@ $break-small: 450px;
   height: 90px;
   width: 100%;
   z-index: 2;
-  border-bottom: 1px solid $theme-color;
+  background-color: black;
   @media screen and (max-width: $break-small) {
     height: 50px;
   }
@@ -27,6 +28,12 @@ $break-small: 450px;
     // background-color: $theme-color;
     text-align: center;
     cursor: pointer;
+    &:hover{
+      background-color: $hover-bg;
+    }
+    &:active{
+      background-color: $active-bg;
+    }
     @media screen and (max-width: $break-small) {
       height: 30px;
       width: 50px;
@@ -60,7 +67,7 @@ $break-small: 450px;
         color: $theme-color;
         border: 1px solid $theme-color;
         border-radius: 2px;
-        font-family: $secondary-font;
+        font-family: $content-font;
         text-transform: uppercase;
         @media screen and (max-width: $break-small) {
           margin: 5px;
@@ -76,4 +83,5 @@ $break-small: 450px;
       }
     }
   }
+
 }

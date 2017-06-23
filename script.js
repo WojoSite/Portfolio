@@ -12,10 +12,12 @@ $(document).ready(function($) {
 
   $(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > 375) {
+    if (y > 175) {
       $('#header').fadeIn();
+      $('#splash-item-container').fadeOut();
     } else {
       $('#header').fadeOut();
+      $('#splash-item-container').fadeIn();
     }
   });
 

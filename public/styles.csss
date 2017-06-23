@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Righteous", cursive; }
+  font-family: "Righteous", cursive;
+  background-color: black; }
   #splash #splash-item-container {
     position: relative;
     height: 350px;
@@ -88,7 +89,7 @@
       font-size: 24px;
       letter-spacing: 4px;
       text-transform: uppercase;
-      font-family: "Raleway", sans-serif;
+      font-family: "Roboto", sans-serif;
       opacity: 0;
       color: white;
       animation-name: tagline;
@@ -108,7 +109,7 @@
   height: 90px;
   width: 100%;
   z-index: 2;
-  background-color: black; }
+  border-bottom: 1px solid white; }
   @media screen and (max-width: 450px) {
     #header {
       height: 50px; } }
@@ -121,10 +122,6 @@
     border-radius: 8px;
     text-align: center;
     cursor: pointer; }
-    #header #brand:hover {
-      background-color: #bfbfbf; }
-    #header #brand:active {
-      background-color: #4d4d4d; }
     @media screen and (max-width: 450px) {
       #header #brand {
         height: 30px;
@@ -156,7 +153,7 @@
         color: white;
         border: 1px solid white;
         border-radius: 2px;
-        font-family: "Raleway", sans-serif;
+        font-family: "Roboto", sans-serif;
         text-transform: uppercase; }
         @media screen and (max-width: 450px) {
           #header #nav-items a .nav-item {
@@ -170,46 +167,23 @@
 
 #projects {
   position: relative;
-  box-sizing: border-box;
-  padding: 90px; }
+  background-color: blue; }
 
 #contact {
   position: relative;
-  box-sizing: border-box;
-  padding: 90px; }
+  background-color: red; }
 
 #about {
   box-sizing: border-box;
-  padding: 90px 30px; }
-  @media screen and (max-width: 680px) {
-    #about {
-      font-size: 1.5em; } }
-  #about #about-image {
-    float: left;
-    margin: 20px;
-    height: 300px;
-    width: 300px; }
-  #about .about-text {
-    margin: 20px;
-    font-size: 2em;
-    line-height: 2em;
-    font-family: "Raleway", sans-serif;
-    color: white;
-    font-weight: 100; }
-    @media screen and (max-width: 850px) {
-      #about .about-text {
-        font-size: 1.75em; } }
-    @media screen and (max-width: 680px) {
-      #about .about-text {
-        font-size: 1.25em; } }
+  padding: 90px;
+  background-color: green; }
 
 body {
-  margin: 0;
-  background-color: black; }
+  margin: 0; }
   body .content-container {
     position: relative;
     box-sizing: border-box;
     height: 500px;
     width: 100%; }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.csss.map */
