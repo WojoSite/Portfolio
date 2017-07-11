@@ -1,7 +1,62 @@
-
+$weather-app-font: 'Lobster', cursive;
+$metro-app-font: 'Faster One', cursive;
+$wheel-of-luck-font: 'Bungee Shade', cursive;
+$break-620: 620px;
+$break-small: 450px;
 
 #projects{
-  position: relative;
-  box-sizing: border-box;
-  padding: 90px;
+  @media screen and (max-width: $break-620){
+    padding: 90px 40px 40px 40px;
+  }
+  .project{
+    padding: 30px;
+    height: 50px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    @media screen and (max-width: $break-620){
+      height: 40px;
+    }
+    @media screen and (max-width: $break-small){
+      padding: 50px 0;
+      width: 200px;
+    }
+    @media screen and (max-height: $break-small){
+      padding: 5px;
+    }
+    a{
+      text-decoration: none;
+    }
+    .project-text{
+      margin: 0;
+      line-height: 50px;
+      font-size: 50px;
+      color: white;
+      &:hover{
+        color: #00ff00;
+        text-decoration: underline;
+      }
+      @media screen and (max-width: $break-620){
+        line-height: 40px;
+        font-size: 40px;
+      }
+      @media screen and (max-width: $break-small){
+        line-height: 40px;
+        font-size: 35px;
+      }
+      @media screen and (max-height: $break-small){
+        font-size: 30px;
+        padding: 5px;
+      }
+    }
+    #weather-app-font{
+      font-family: $weather-app-font;
+    }
+    #metro-app-font{
+      font-family: $metro-app-font;
+    }
+    #wheel-of-luck-font{
+      font-family: $wheel-of-luck-font;
+    }
+  }
 }

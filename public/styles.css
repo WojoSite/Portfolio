@@ -3,13 +3,16 @@
   align-items: center;
   justify-content: center;
   font-family: "Righteous", cursive; }
+  @media screen and (max-height: 450px) {
+    #splash {
+      padding: 90px 40px 40px 40px; } }
   #splash #splash-item-container {
     position: relative;
     height: 350px;
     width: 350px; }
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 450px), screen and (max-height: 450px) {
       #splash #splash-item-container {
-        height: 250px;
+        height: 200px;
         width: 250px; } }
     #splash #splash-item-container .splash-letter-item {
       position: absolute;
@@ -20,7 +23,7 @@
       color: white;
       font-size: 100px;
       text-align: center; }
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 450px), screen and (max-height: 450px) {
         #splash #splash-item-container .splash-letter-item {
           height: 60px;
           width: 60px;
@@ -31,7 +34,7 @@
     #splash #splash-item-container #rest-first {
       position: absolute;
       left: 112px; }
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 450px), screen and (max-height: 450px) {
         #splash #splash-item-container #rest-first {
           left: 69px;
           top: 2px; } }
@@ -53,7 +56,7 @@
       position: absolute;
       top: 118px;
       left: 112px; }
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 450px), screen and (max-height: 450px) {
         #splash #splash-item-container #rest-last {
           left: 69px;
           top: 80px; } }
@@ -66,7 +69,7 @@
       opacity: 0;
       font-size: 90px;
       color: white; }
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 450px), screen and (max-height: 450px) {
         #splash #splash-item-container .rest {
           font-size: 50px; }
         @keyframes splashletters {
@@ -76,7 +79,7 @@
     #splash #splash-item-container .letter {
       margin: 0;
       line-height: 100px; }
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 450px), screen and (max-height: 450px) {
         #splash #splash-item-container .letter {
           line-height: 60px; } }
 @keyframes tagline {
@@ -95,20 +98,27 @@
       animation-duration: 2s;
       animation-delay: 2s;
       animation-fill-mode: forwards; }
-      @media screen and (max-width: 450px) {
+      @media screen and (max-width: 450px), screen and (max-height: 450px) {
         #splash #splash-item-container #tagline {
           top: 175px;
-          font-size: 18px; } }
+          font-size: 16px; } }
 
+@keyframes navbarshow {
+  100% {
+    opacity: 1; } }
 #header {
-  display: none;
   position: fixed;
   top: 0;
   box-sizing: border-box;
   height: 90px;
   width: 100%;
   z-index: 2;
-  background-color: black; }
+  background-color: black;
+  animation-name: navbarshow;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0; }
   @media screen and (max-width: 450px) {
     #header {
       height: 50px; } }
@@ -168,48 +178,124 @@
         #header #nav-items a .nav-item:active {
           background-color: #4d4d4d; }
 
-#projects {
-  position: relative;
-  box-sizing: border-box;
-  padding: 90px; }
+@media screen and (max-width: 620px) {
+  #projects {
+    padding: 90px 40px 40px 40px; } }
+#projects .project {
+  padding: 30px;
+  height: 50px;
+  width: 300px;
+  margin: auto;
+  text-align: center; }
+  @media screen and (max-width: 620px) {
+    #projects .project {
+      height: 40px; } }
+  @media screen and (max-width: 450px) {
+    #projects .project {
+      padding: 50px 0;
+      width: 200px; } }
+  @media screen and (max-height: 450px) {
+    #projects .project {
+      padding: 5px; } }
+  #projects .project a {
+    text-decoration: none; }
+  #projects .project .project-text {
+    margin: 0;
+    line-height: 50px;
+    font-size: 50px;
+    color: white; }
+    #projects .project .project-text:hover {
+      color: #00ff00;
+      text-decoration: underline; }
+    @media screen and (max-width: 620px) {
+      #projects .project .project-text {
+        line-height: 40px;
+        font-size: 40px; } }
+    @media screen and (max-width: 450px) {
+      #projects .project .project-text {
+        line-height: 40px;
+        font-size: 35px; } }
+    @media screen and (max-height: 450px) {
+      #projects .project .project-text {
+        font-size: 30px;
+        padding: 5px; } }
+  #projects .project #weather-app-font {
+    font-family: "Lobster", cursive; }
+  #projects .project #metro-app-font {
+    font-family: "Faster One", cursive; }
+  #projects .project #wheel-of-luck-font {
+    font-family: "Bungee Shade", cursive; }
 
 #contact {
-  position: relative;
-  box-sizing: border-box;
-  padding: 90px; }
+  text-align: center; }
+  @media screen and (max-width: 620px) {
+    #contact {
+      padding: 90px 40px 40px 40px;
+      font-size: 30px; } }
+  #contact a {
+    text-decoration: none;
+    vertical-align: middle; }
+    #contact a p {
+      margin-top: 200px;
+      color: white;
+      line-height: 100%;
+      font-size: 40px;
+      font-family: "Raleway", sans-serif; }
+      #contact a p:hover {
+        color: #00ff00;
+        text-decoration: underline; }
+      @media screen and (max-width: 620px) {
+        #contact a p {
+          font-size: 20px; } }
+      @media screen and (max-height: 450px) {
+        #contact a p {
+          margin-top: 90px;
+          font-size: 20px; } }
 
 #about {
-  box-sizing: border-box;
-  padding: 90px 30px; }
-  @media screen and (max-width: 680px) {
+  text-align: center; }
+  @media screen and (max-width: 620px) {
     #about {
-      font-size: 1.5em; } }
-  #about #about-image {
-    float: left;
-    margin: 20px;
-    height: 300px;
-    width: 300px; }
+      padding: 90px 40px 40px 40px; } }
+  @media screen and (max-width: 400px) {
+    #about {
+      padding: 90px 40px 40px 40px; } }
+  @media screen and (max-height: 450px) {
+    #about {
+      padding: 90px 20px 40px 40px; } }
   #about .about-text {
-    margin: 20px;
+    margin: 0;
+    padding-top: 20px;
     font-size: 2em;
     line-height: 2em;
     font-family: "Raleway", sans-serif;
     color: white;
     font-weight: 100; }
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 800px) {
       #about .about-text {
         font-size: 1.75em; } }
-    @media screen and (max-width: 680px) {
+    @media screen and (max-width: 520px) {
+      #about .about-text {
+        font-size: 1.5em; } }
+    @media screen and (max-width: 400px) {
       #about .about-text {
         font-size: 1.25em; } }
+    @media screen and (max-height: 450px) {
+      #about .about-text {
+        font-size: 1em; } }
 
 body {
   margin: 0;
   background-color: black; }
-  body .content-container {
+  body .splash-container {
     position: relative;
     box-sizing: border-box;
-    height: 500px;
     width: 100%; }
+  body .container {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 90px; }
 
 /*# sourceMappingURL=styles.css.map */

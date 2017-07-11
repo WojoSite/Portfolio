@@ -1,33 +1,40 @@
 
 $secondary-font: 'Roboto', sans-serif;
 $content-font: 'Raleway', sans-serif;
-$break-850: 850px;
-$break-680: 680px;
+$break-800: 800px;
+$break-620: 620px;
+$break-520: 520px;
+$break-400: 400px;
 #about{
-  box-sizing: border-box;
-  padding: 90px 30px;
-  @media screen and (max-width: $break-680) {
-    font-size: 1.5em;
-
+  text-align: center;
+  @media screen and (max-width: $break-620){
+    padding: 90px 40px 40px 40px;
   }
-  #about-image{
-    float: left;
-    margin: 20px;
-    height: 300px;
-    width: 300px;
+  @media screen and (max-width: $break-400){
+    padding: 90px 40px 40px 40px;
+  }
+  @media screen and (max-height: $break-small){
+    padding: 90px 20px 40px 40px;
   }
   .about-text{
-    margin: 20px;
+    margin: 0;
+    padding-top: 20px;
     font-size: 2em;
     line-height: 2em;
     font-family: $content-font;
     color: white;
     font-weight: 100;
-    @media screen and (max-width: $break-850) {
+    @media screen and (max-width: $break-800){
       font-size: 1.75em;
     }
-    @media screen and (max-width: $break-680) {
+    @media screen and (max-width: $break-520){
+      font-size: 1.5em;
+    }
+    @media screen and (max-width: $break-400){
       font-size: 1.25em;
+    }
+    @media screen and (max-height: $break-small){
+      font-size: 1em;
     }
   }
 }

@@ -1,7 +1,33 @@
-
+$content-font: 'Raleway', sans-serif;
+$break-800: 800px;
+$break-800: 620px;
 
 #contact{
-  position: relative;
-  box-sizing: border-box;
-  padding: 90px;
+  text-align: center;
+  @media screen and (max-width: $break-800){
+    padding: 90px 40px 40px 40px;
+    font-size: 30px;
+  }
+  a{
+    text-decoration: none;
+    vertical-align: middle;
+    p{
+      margin-top: 200px;
+      color: white;
+      line-height: 100%;
+      font-size: 40px;
+      font-family: $content-font;
+      &:hover{
+        color: #00ff00;
+        text-decoration: underline;
+      }
+      @media screen and (max-width: $break-800){
+        font-size: 20px;
+      }
+      @media screen and (max-height: $break-small){
+        margin-top: 90px;
+        font-size: 20px;
+      }
+    }
+  }
 }

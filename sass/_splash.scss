@@ -9,13 +9,15 @@ $break-small: 450px;
   align-items: center;
   justify-content: center;
   font-family: $title-font;
-
+  @media screen and (max-height: $break-small) {
+    padding: 90px 40px 40px 40px;
+  }
   #splash-item-container{
     position: relative;
     height: 350px;
     width: 350px;
-    @media screen and (max-width: $break-small) {
-      height: 250px;
+    @media screen and (max-width: $break-small), screen and (max-height: $break-small) {
+      height: 200px;
       width: 250px;
     }
     .splash-letter-item{
@@ -28,7 +30,7 @@ $break-small: 450px;
       color: $theme-color;
       font-size: 100px;
       text-align: center;
-      @media screen and (max-width: $break-small) {
+      @media screen and (max-width: $break-small), screen and (max-height: $break-small)  {
         height: 60px;
         width: 60px;
         font-size: 50px;
@@ -41,7 +43,7 @@ $break-small: 450px;
     #rest-first{
       position: absolute;
       left: 112px;
-      @media screen and (max-width: $break-small) {
+      @media screen and (max-width: $break-small), screen and (max-height: $break-small)  {
         left: 69px;
         top: 2px;
       }
@@ -68,7 +70,7 @@ $break-small: 450px;
       position: absolute;
       top: 118px;
       left: 112px;
-      @media screen and (max-width: $break-small) {
+      @media screen and (max-width: $break-small), screen and (max-height: $break-small)  {
         left: 69px;
         top: 80px;
       }
@@ -82,7 +84,7 @@ $break-small: 450px;
       opacity: 0;
       font-size: 90px;
       color: $theme-color;
-      @media screen and (max-width: $break-small) {
+      @media screen and (max-width: $break-small), screen and (max-height: $break-small)  {
         font-size: 50px;
         @keyframes splashletters {
           100% {top:80px; transform: rotate(360deg);}
@@ -92,7 +94,7 @@ $break-small: 450px;
     .letter{
       margin: 0;
       line-height: 100px;
-      @media screen and (max-width: $break-small) {
+      @media screen and (max-width: $break-small), screen and (max-height: $break-small)  {
         line-height: 60px;
       }
     }
@@ -112,9 +114,9 @@ $break-small: 450px;
       animation-duration: 2s;
       animation-delay: 2s;
       animation-fill-mode: forwards;
-      @media screen and (max-width: $break-small) {
+      @media screen and (max-width: $break-small), screen and (max-height: $break-small)  {
         top: 175px;
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   }

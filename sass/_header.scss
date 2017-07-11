@@ -6,8 +6,10 @@ $hover-bg: #bfbfbf;
 $active-bg: #4d4d4d;
 $break-small: 450px;
 
+@keyframes navbarshow{
+  100% {opacity: 1;}
+}
 #header{
-  display: none;
   position: fixed;
   top:0;
   box-sizing: border-box;
@@ -15,6 +17,11 @@ $break-small: 450px;
   width: 100%;
   z-index: 2;
   background-color: black;
+  animation-name: navbarshow;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
   @media screen and (max-width: $break-small) {
     height: 50px;
   }
