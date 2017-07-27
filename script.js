@@ -8,12 +8,4 @@ $(document).ready(function($) {
   $(window).resize(function() {
     setHeight();
   });
-  $(document).scroll(function() {
-    var y = $(this).scrollTop();
-    if (y > 175) {
-      $('#splash-item-container').fadeOut();
-    } else {
-      $('#splash-item-container').fadeIn();
-    }
-  });
 });
