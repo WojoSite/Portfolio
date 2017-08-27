@@ -203,8 +203,7 @@
     margin: 0;
     line-height: 50px;
     font-size: 50px;
-    color: white;
-    opacity: 0; }
+    color: white; }
     #projects .project .project-text:hover {
       color: #00ff00;
       text-decoration: underline; }
@@ -241,8 +240,7 @@
       color: white;
       line-height: 100%;
       font-size: 40px;
-      font-family: "Raleway", sans-serif;
-      opacity: 0; }
+      font-family: "Raleway", sans-serif; }
       #contact a #contact-text:hover {
         color: #00ff00;
         text-decoration: underline; }
@@ -272,8 +270,7 @@
     line-height: 2em;
     font-family: "Raleway", sans-serif;
     color: white;
-    font-weight: 100;
-    opacity: 0; }
+    font-weight: 100; }
     @media screen and (max-width: 800px) {
       #about .about-text {
         font-size: 1.75em; } }
@@ -301,5 +298,10 @@ body {
     width: 100%;
     padding: 90px;
     border-bottom: 1px solid #262626; }
+    body .container .display-text {
+      opacity: 0;
+      transition: all 1s ease-out; }
+    body .container .fade-in {
+      opacity: 1; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -19,5 +19,12 @@ body{
     width: 100%;
     padding: 90px;
     border-bottom: 1px solid #262626;
+    .display-text{
+      opacity: 0;
+      transition: all 1s ease-out;
+    }
+    .fade-in{
+      opacity: 1;
+    }
   }
 }
