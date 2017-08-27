@@ -3,7 +3,6 @@ $secondary-font: 'Roboto', sans-serif;
 $content-font: 'Raleway', sans-serif;
 $theme-color: white;
 $break-small: 450px;
-
 #splash{
   display: flex;
   align-items: center;
@@ -48,19 +47,15 @@ $break-small: 450px;
         top: 2px;
       }
     }
-
     @keyframes splashletters {
       100% {top:120px; transform: rotate(360deg);}
     }
-
-
     @keyframes splashnames {
       100% {opacity: 1;}
     }
-
     #last-letter{
-      top: 0; // =====CHANGE TO 0
-      transform: rotate(180deg); // =====UNCOMMENT THIS
+      top: 0;
+      transform: rotate(180deg);
       animation-name: splashletters;
       animation-duration: 1s;
       animation-delay: 1s;

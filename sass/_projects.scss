@@ -1,6 +1,7 @@
 $weather-app-font: 'Lobster', cursive;
 $metro-app-font: 'Faster One', cursive;
 $wheel-of-luck-font: 'Monoton', cursive;
+$study-stacks-font: 'Marck Script', cursive;
 $break-620: 620px;
 $break-small: 450px;
 
@@ -11,14 +12,14 @@ $break-small: 450px;
   .project{
     padding: 30px;
     height: 50px;
-    width: 300px;
-    margin: auto;
+    width: 400px;
+    margin: 30px auto;
     text-align: center;
     @media screen and (max-width: $break-620){
       height: 40px;
     }
     @media screen and (max-width: $break-small){
-      padding: 50px 0;
+      padding: 40px 0;
       width: 200px;
     }
     @media screen and (max-height: $break-small){
@@ -57,6 +58,9 @@ $break-small: 450px;
     }
     #wheel-of-luck-font{
       font-family: $wheel-of-luck-font;
+    }
+    #study-stacks-font{
+      font-family: $study-stacks-font;
     }
   }
 }
