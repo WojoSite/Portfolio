@@ -33,6 +33,7 @@ $break-small: 450px;
       line-height: 50px;
       font-size: 50px;
       color: white;
+      opacity: 0;
       &:hover{
         color: #00ff00;
         text-decoration: underline;
@@ -53,9 +54,10 @@ $break-small: 450px;
     #weather-app-font{
       font-family: $weather-app-font;
     }
-    #metro-app-font{
-      font-family: $metro-app-font;
-    }
+    // #metro-app-font{
+    //   font-family: $metro-app-font;
+    //   top: 50vh
+    // }
     #wheel-of-luck-font{
       font-family: $wheel-of-luck-font;
     }

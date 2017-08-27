@@ -203,7 +203,8 @@
     margin: 0;
     line-height: 50px;
     font-size: 50px;
-    color: white; }
+    color: white;
+    opacity: 0; }
     #projects .project .project-text:hover {
       color: #00ff00;
       text-decoration: underline; }
@@ -221,8 +222,6 @@
         padding: 5px; } }
   #projects .project #weather-app-font {
     font-family: "Lobster", cursive; }
-  #projects .project #metro-app-font {
-    font-family: "Faster One", cursive; }
   #projects .project #wheel-of-luck-font {
     font-family: "Monoton", cursive; }
   #projects .project #study-stacks-font {
@@ -237,20 +236,21 @@
   #contact a {
     text-decoration: none;
     vertical-align: middle; }
-    #contact a p {
+    #contact a #contact-text {
       margin-top: 200px;
       color: white;
       line-height: 100%;
       font-size: 40px;
-      font-family: "Raleway", sans-serif; }
-      #contact a p:hover {
+      font-family: "Raleway", sans-serif;
+      opacity: 0; }
+      #contact a #contact-text:hover {
         color: #00ff00;
         text-decoration: underline; }
       @media screen and (max-width: 620px) {
-        #contact a p {
+        #contact a #contact-text {
           font-size: 20px; } }
       @media screen and (max-height: 450px) {
-        #contact a p {
+        #contact a #contact-text {
           margin-top: 90px;
           font-size: 20px; } }
 
@@ -272,7 +272,8 @@
     line-height: 2em;
     font-family: "Raleway", sans-serif;
     color: white;
-    font-weight: 100; }
+    font-weight: 100;
+    opacity: 0; }
     @media screen and (max-width: 800px) {
       #about .about-text {
         font-size: 1.75em; } }

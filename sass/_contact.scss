@@ -11,12 +11,13 @@ $break-800: 620px;
   a{
     text-decoration: none;
     vertical-align: middle;
-    p{
+    #contact-text{
       margin-top: 200px;
       color: white;
       line-height: 100%;
       font-size: 40px;
       font-family: $content-font;
+      opacity: 0;
       &:hover{
         color: #00ff00;
         text-decoration: underline;
