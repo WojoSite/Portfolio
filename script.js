@@ -31,16 +31,16 @@ $(document).ready(function($) {
   // Scenes
   var studyStacksScene = new ScrollMagic.Scene({
     triggerElement: "#study-stacks-font",
-    offset: -200
+    triggerHook: 0.8
   })
   .setTween(studyStacksTween)
-  // .addIndicators({
-  //     name: "Study Stacks"
-  // })
+  .addIndicators({
+      name: "Study Stacks"
+  })
   .addTo(controller);
   var wheelOfLuckScene = new ScrollMagic.Scene({
     triggerElement: "#wheel-of-luck-font",
-    offset: -200
+    triggerHook: 0.8
   })
   .setTween(wheelOfLuckTween)
   // .addIndicators({
@@ -49,7 +49,7 @@ $(document).ready(function($) {
   .addTo(controller);
   var weatherAppScene = new ScrollMagic.Scene({
     triggerElement: "#weather-app-font",
-    offset: -200
+    triggerHook: 0.8
   })
   .setTween(weatherAppTween)
   // .addIndicators({
@@ -58,7 +58,7 @@ $(document).ready(function($) {
   .addTo(controller);
   var contactScene = new ScrollMagic.Scene({
     triggerElement: "#contact-text",
-    offset: -200
+    triggerHook: 0.8
   })
   .setTween(contactTween)
   // .addIndicators({
@@ -67,7 +67,7 @@ $(document).ready(function($) {
   .addTo(controller);
   var aboutScene = new ScrollMagic.Scene({
     triggerElement: ".about-text",
-    offset: -200
+    triggerHook: 0.8
   })
   .setTween(aboutTween)
   // .addIndicators({
