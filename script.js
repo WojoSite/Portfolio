@@ -1,6 +1,8 @@
 $(document).ready(function($) {
+
+  // set height function on window resize
   function setHeight() {
-    windowHeight = $(window).innerHeight();
+    var windowHeight = $(window).innerHeight();
     $('.container').css('height', windowHeight);
   };
   setHeight();
@@ -11,7 +13,7 @@ $(document).ready(function($) {
   // ScrollMagic controller init
   var controller = new ScrollMagic.Controller();
 
-  // loop through .display-text items and add scene
+  // loop through .display-text items and add scenes
   $('.display-text').each(function(){
     var myScene = new ScrollMagic.Scene({
       triggerElement: this,
